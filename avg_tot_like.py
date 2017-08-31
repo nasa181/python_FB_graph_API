@@ -11,7 +11,7 @@ def get_month(str_datetime):
 def get_year(str_datetime):
 	return str_datetime[0:4]
 
-graph = facebook.GraphAPI(access_token="EAACEdEose0cBAKdLfdZC6l79xiEt8RpBTIqBELOxAED5RzbODBYs02mlyFmxaadfdKIOenA00PCPWqwDqGSI2jGVJAVnfWQB0ro2ilGsgu8F4oPuCOUmkXh1Tufhy6TWi8ROA0TS68bj1SM365ajVoOC16ALnk2ylZC3nwLv2xVAkZCX5eHdZACjlA1GI92bc4RfZAsDtSQZDZD", version=2.10)
+graph = facebook.GraphAPI(access_token="ACCESS TOKEN", version=2.10)
 post = graph.get_object(id='325477731120719/posts?fields=created_time,likes.limit(0).summary(true),comments.limit(0).summary(true)')
 posts_count = len(post['data'])
 likes_count = 0
